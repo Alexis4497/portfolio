@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon Portfolio</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width"/>
+<!--Menu-->
+<script src ="js/menu_responsive.js"></script>
+
+<!--Favivon-->
+<link rel="icon" type="image/ico" href="img/favicon.ico" />
+
+<!--Bouton retour en haut de page -->
+<script src ="js/companim.js"></script>
+<script src ="js/top.js"></script>
+<script src ="js/typewriter.js"></script>
+
+<!--Smooth Scroll-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src = "js/scroll.js"></script>
+
+<!--Tabs-->
+<script src ="js/tabs.js"></script>
+
+    <!---Formulaire de contact ---------->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<!--font-->
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+
+<!--css-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<div id="output"></div>
+<!-- Load Babel -->
+<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Your custom script here -->
+<script type="text/babel" href="js/download.js"></script>
+
+
+
+<link rel="stylesheet" href="css/download.css">
+
+
+</head>
+
+<!--contenu du site-->
+
+  <body>
+
+<header class="header">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top" >Alexis Caillé</a>
+          <button class="navbar-toggler collapsed" id="main" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()"></span>
+          </button>
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#cv">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#projets">Mes Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#competences">Mes compétences</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse  sidenav" id="mySidenav" style="">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#cv">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#projets">Mes projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#competences">Mes compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+                                                      <!--Bannière-->
+    <section class="container-fluid banner">
+      <div class="ban">
+          <img src="img/ban.jpg" alt="bannière_site">
+
+      </div>
+      <div class="inner-banner">
+        <h1>
+<a id="type_writer"class="typewrite" data-period="2000" data-type='[ "Bienvenue sur mon Portfolio !" ]'>
+  <span class="wrap"></span>
+</a>
+</h1>
+          <a id="btn_contact" class="btn btn-custom" href="#contact" role="button">Contact</a>
+      </div>
+    </section>
+
+                                                      <!--A propos-->
+    <section class="container-fluid about">
+      <div class="container">
+
+            <h2 id="about" class="scroll"> A propos de moi </h2>
+              <hr class="separator"></hr>
+
+            </div>
+            <div class="row">
+
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+              <h3> Etudes </h3>
+              <p id="pEtudes">
+                Je suis titulaire d'un BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) et d'un Bacalauréat Sciences et Techniques du Management et de la Gestion, j'ai également validé une première année de BTS Professions Immobilières
+
+              </p>
+            </article>
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+              <h3> Expériences </h3>
+              <p>
+                J'ai réalisé 2 stages durant ma formation: Le premier avait pour objectif de finaliser une application de Gestion de Stages en PHP pour le lycée la Colinière à Nantes, et mon 2ème stage à été de créer une vidéothèque  avec Drupal pour le laboratoire Mathématiques de la Faculté de Sciences de Nantes
+              </p>
+            </article>
+            <!-- taille des colonnes + responsive pour petits appareils-->
+            <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+              <h3> Hobbies </h3>
+              <p>
+                Je pratique du football en club et mes plus grandes passions sont le football, le cinéma et les sorties entre amiss
+              </p>
+            </article>
+          </div>
+        </div>
+    </section>
+
+                                                          <!--Portfolio-->
+    <section class="container-fluid portfolio">
+
+<div class="container">
+  <h2 id="portfolio">Mon Portfolio</h2>
+  <hr class="separator"></hr>
+
+  <div id="content">
+  <div id="works">
+
+          <a id="example1" href="#cv"><div class="work">
+
+              <img src="img/cv.jpg" />
+              <div class="triangle-gauche"></div><!-- .triangle-gauche -->
+              <div class="triangle-droite"></div><!-- .triangle-droite -->
+              <span>Curriculum Vitae</span>
+
+          </div><!-- .work -->
+          </a>
+
+          <a id="example1" href="#projets"><div class="work">
+
+              <img src="img/stage.jpg" />
+              <div class="triangle-gauche"></div><!-- .triangle-gauche -->
+              <div class="triangle-droite"></div><!-- .triangle-droite -->
+              <span>Mes Stages</span>
+
+          </div><!-- .work -->
+          </a>
+
+          <a id="example1" href="#projets"><div class="work">
+
+              <img src="img/ppe.jpg" />
+              <div class="triangle-gauche"></div><!-- .triangle-gauche -->
+              <div class="triangle-droite"></div><!-- .triangle-droite -->
+              <span>Mes PPE</span>
+
+          </div><!-- .work -->
+          </a>
+
+          <a id="example1" href="#competences"><div class="work">
+
+              <img src="img/skills.jpg" />
+              <div class="triangle-gauche"></div><!-- .triangle-gauche -->
+              <div class="triangle-droite"></div><!-- .triangle-droite -->
+              <span>Mes Compétences<span>
+
+          </div><!-- .work -->
+          </a>
+    </div><!-- #works -->
+
+  </div><!-- #content -->
+</div>
+    </section>
+
+                                              <!-- Curriculum Vitae-->
+
+      <section class="container-fluid cv">
+          <div class="container">
+
+            <h2 id="cv"> Curriculum Vitae </h2>
+              <hr class="separator"></hr>
+
+              <div class= "cv_pdf">
+                <embed src="pdf/CV .pdf" width=100%  height=500 type='application/pdf'/>
+          </div>
+
+
+                                                  <!--Projets-->
+
+          <section class="container-fluid stage">
+                <div class="container">
+
+                      <h2 id="projets"> Mes Projets </h2>
+                            <hr class="separator"></hr>
+
+                        <!-- Tab links -->
+          <div class="tab">
+
+            <button class="tablinks active" onclick="openCity(event, 'stage1')">1er Stage</button>
+            <button class="tablinks" onclick="openCity(event, 'stage2')">2ème Stage</button>
+            <button class="tablinks" onclick="openCity(event, 'ppe1')">PPE Fruitmix</button>
+            <button class="tablinks" onclick="openCity(event, 'ppe2')">PPE GSB</button>
+            <button class="tablinks" onclick="openCity(event, 'ppe3')">PPE Kaliémie</button>
+          </div>
+
+<!-- Tab content -->
+        <div id="stage1" class="tabcontent" style=display:block>
+            <h3>Stage La Colinière</h3>
+            <p>Lors de mon stage de 1ère année au lycée de la Colinière, mon projet était de finaliser une application de gestion des stages des étudiants, afin que le processus de gestion des stages soit simplifiés grâce à cette application. Ce logiciel était réalisé grâce à du PHP Objet.</br>
+</br>
+L'application est composée de 3 interfaces utilisateurs :</br></br>
+
+- Une interface pour les Administrateurs</br></br>
+
+-Une interface pour les Professeurs</br></br>
+
+-Une interface pour les Elèves</br></br>
+
+L'interface pour les administrateurs avait pour objectif de pouvoir permettre toute la gestion des différents comptes de l'application, et d'avoir un contrôle total sur chaque utilisateur.</br></br>
+
+L'interface pour les professeurs leur permettait de pouvoir suivre les avancées de leurs élèves dans leur recherches de stage, et de pouvoir leur en proposer, ainsi que de pouvoir commentez et conseiller leurs différentes prospections.</br></br>
+
+L'interface pour les élèves leur permet de pouvoir consulter les offres de stages que leur propose leurs enseignants, de pouvoir prospecter, et de pouvoir confirmer leur stage une fois qu'ils en ont trouver un</br>
+</br>
+Voici quelques images des différentes interfaces :</br>
+</p>
+<!--Galerie thumbmails-->
+
+<div class="gallery">
+  <a target="_blank" href="img/stage1_screen1.png">
+    <img src="img/stage1_screen1.png" alt="stage1_screen1" width="600" height="400">
+  </a>
+  <div class="desc">Ajout d'une entreprise sous un compte professeur</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/stage1_screen2.png">
+    <img src="img/stage1_screen2.png" alt="stage1_screen2" width="600" height="400">
+  </a>
+  <div class="desc">Consultation des stages ayant été demandé par un élève connecté</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/stage1_screen3.png">
+    <img src="img/stage1_screen3.png" alt="stage1_screen3" width="600" height="400">
+  </a>
+  <div class="desc">Création d'un étudiant sur le compte Administrateur</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/stage1_screen4.png">
+    <img src="img/stage1_screen4.png" alt="stage1_screen4" width="600" height="400">
+  </a>
+  <div class="desc">Page de connexion</div>
+</div>
+
+
+        </div>
+          </div>
+            </div>
+
+
+
+        <div id="stage2" class="tabcontent">
+          <h3>Stage Université de Nantes</h3>
+          <p>Le projet de mon stage de 2ème année était de réaliser un site dédié pour les vidéos que prenait les professeurs du laboratoire durant leur cours ou diverses représentations.</br></br> J'ai réaliser le site en entier à l'aide du CMS (Content Managment System) Drupal</br></br>
+
+Le site est composé d'une page dédiée aux vidéos à la manière de youtube, lorsque l'on clique sur une vidéos, elle s'affiche avec son descriptif, le nom du professeur qui l'a réalisée et sa catégorie </br></br>
+
+Le site contient également un calendrier où sont ajouter tous les événements à venir dans le laboratoire </br></br></p>
+        </div>
+
+        <div id="ppe1" class="tabcontent">
+          <h3>FruitMix</h3>
+          <p>Le projet FruitMix est en projet que j'ai réalisé durant ma première année de formation </br></br>
+          Le but du projet était de remodelé un site déjà existant et d'accomplir les missions suivantes:</br></br>
+          1.	Installer la solution web, en local, sur son poste de travail avec WampServer</br></br>
+          2.	Tester le site déployer sur la station afin de consigner dans des fiches d’incident toutes les anomalies détectées et les suggestions de corrections à apporter </br></br>
+          3.	Proposer une nouvelle charte graphique à rédiger dans une documentation technique. Préciser entre autre les choix de : police, code des couleurs retenues, taille et formes des images, logo de l’entreprise, gestion des liens hypertextes,...</br></br>
+          4.	Modifier la feuille de style /css/principal.css en conséquence </br></br>
+          5.	Tester la qualité de présentation du site après modification, faire valider les choix par le chef de projet</br></br>
+          6. Intégration du site sur un serveur Linux </br></br>
+          7. Modifier la base de données afin d'y intégrer une table contact</br></br>
+          8. Créer un formulaire de contact </br></br>
+          9. Modifier la base de données afin d'ajouter une nouvelle page Cocktail sur le site
+
+</p>
+
+<!--Galerie thumbmails-->
+
+<div class="gallery">
+  <a target="_blank" href="img/fruitmix_base.png">
+    <img src="img/fruitmix_base.png" alt="fruitmix_base" width="600" height="400">
+  </a>
+  <div class="desc">Site FruitMix au début du projet </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/screen_fruitmix1.png">
+    <img src="img/screen_fruitmix1.png" alt="screen_fruitmix1" width="600" height="400">
+  </a>
+  <div class="desc">Site FruitMix à la fin du projet</div>
+</div>
+
+
+
+        </div>
+        </div>
+
+        <div id="ppe2" class="tabcontent">
+          <h3>GSB</h3>
+          <p> Voici ci-dessous un document pdf pour mieux comprendre le contexte de ce projet:
+        </p>
+        <div class= "cv_pdf">
+          <embed src="pdf/Contexte_GSB.pdf" width=800 height=500 type='application/pdf'/>
+        </div>
+        <p>
+          Les 3 principales missions confiées était donc les suivantes :</br></br>
+
+          •	la gestion des visiteurs des régions et des secteurs et les liens hiérarchiques entre visiteurs,</br></br>
+          •	la gestion des rapports de visite.</br></br>
+          •	La gestion des remboursements des frais</br></br>
+        </p>
+        <div class="gallery">
+          <a target="_blank" href="img/accueil_gsb.png">
+            <img src="img/accueil_gsb.png" alt="accueil_gsb" width="600" height="400">
+          </a>
+          <div class="desc">Accueil de GSB </div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img/screen_gsb.png">
+            <img src="img/screen_gsb.png" alt="screen_gsb" width="600" height="400">
+          </a>
+          <div class="desc">Ma partie, la gestion des fiches de frais </div>
+        </div>
+
+
+        </div>
+
+        <div id="ppe3" class="tabcontent">
+          <h3>Kaliémie</h3>
+          <p> Voici ci-dessous un document pdf pour mieux comprendre le contexte de ce projet:
+        </p>
+        <div class= "cv_pdf">
+          <embed src="pdf/Kaliemie.pdf" width=800 height=500 type='application/pdf'/>
+        </div>
+        <p>
+          Ma mission était de créer le site web responsive dont voici un exemple ci-dessous :
+        </p>
+        <div class="gallery">
+          <a target="_blank" href="img/Site_Kaliémie.png">
+            <img src="img/Site_Kaliémie.png" alt="Site_Kaliémie" width="600" height="400">
+          </a>
+          <div class="desc">Exemple d'utilisation en étant connecté en tant qu'infimière </div>
+        </div>
+        </div>
+
+</section>
+
+                                              <!--Tableau de compétences-->
+
+        <section class="container-fluid tabcomp">
+            <div class="container">
+
+              <h2 id="competences">Compétences </h2>
+                <hr class="separator"></hr>
+                <div>
+                  <h3> Langages </h3>
+  <div class="skillbar clearfix " data-percent="80%">
+  	<div class="skillbar-title" style="background: 	#ff8c00;"><span>HTML5</span></div>
+  	<div id="html" class="skillbar-bar" style="background: #ffa500;"></div>
+  	<div class="skill-bar-percent">80%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="70%">
+  	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+  	<div id="css" class="skillbar-bar" style="background: #3498db;"></div>
+  	<div class="skill-bar-percent">70%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="50%">
+  	<div class="skillbar-title" style="background: #8b0000;"><span>C#</span></div>
+  	<div id ="c#" class="skillbar-bar" style="background: #ff0000;"></div>
+  	<div class="skill-bar-percent">50%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="60%">
+  	<div class="skillbar-title" style="background: #46465e;"><span>SQL</span></div>
+  	<div id="sql"class="skillbar-bar" style="background: #5a68a5;"></div>
+  	<div class="skill-bar-percent">60%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="50%">
+  	<div class="skillbar-title" style="background: #ffd700;"><span>Php</span></div>
+  	<div id="php"class="skillbar-bar" style="background: #ffff00;"></div>
+  	<div class="skill-bar-percent">50%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="30%">
+  	<div class="skillbar-title" style="background: #27ae60;"><span>Java</span></div>
+  	<div id="java"class="skillbar-bar" style="background: #2ecc71;"></div>
+  	<div class="skill-bar-percent">30%</div>
+  </div> <!-- End Skill Bar -->
+
+  <div class="skillbar clearfix " data-percent="15%">
+  	<div class="skillbar-title" style="background: #124e8c;"><span>Jquery</span></div>
+  	<div id="jquery" class="skillbar-bar" style="background: #4288d0;"></div>
+  	<div class="skill-bar-percent">15%</div>
+  </div> <!-- End Skill Bar -->
+
+                <h3> CMS </h3>
+                <div class="skillbar clearfix " data-percent="70%">
+                	<div class="skillbar-title" style="background: 		#696969;"><span>Drupal</span></div>
+                	<div id="drupal"class="skillbar-bar" style="background: #808080	;"></div>
+                	<div class="skill-bar-percent">70%</div>
+                </div> <!-- End Skill Bar -->
+
+                <div class="skillbar clearfix " data-percent="50%">
+                	<div class="skillbar-title" style="background: #800000;"><span>Wordpress</span></div>
+                	<div id="wordpress"class="skillbar-bar" style="background:#a52a2a ;"></div>
+                	<div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+                    <h3> Logiciels </h3>
+
+                    <div class="skillbar clearfix " data-percent="80%">
+                    	<div class="skillbar-title" style="background: 		#800080;"><span>SuiteOffice</span></div>
+                    	<div id="office"class="skillbar-bar" style="background:#8a2be2;"></div>
+                    	<div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                    	<div class="skillbar-title" style="background:#008000;"><span>Photoshop</span></div>
+                    	<div id="photoshop"class="skillbar-bar" style="background: #7fff00;"></div>
+                    	<div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="90%">
+                    	<div class="skillbar-title" style="background: 	#008080;"><span>Atom</span></div>
+                    	<div id="atom"class="skillbar-bar" style="background: 	#7fffd4;"></div>
+                    	<div class="skill-bar-percent">90%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                    	<div class="skillbar-title" style="background: #8b0000;"><span>SQLServer</span></div>
+                    	<div id="sqlserver"class="skillbar-bar" style="background: #ff0000;"></div>
+                    	<div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="50%">
+                    	<div class="skillbar-title" style="background: #ffd700;"><span>Camtasia</span></div>
+                    	<div id="camtasia"class="skillbar-bar" style="background: #ffff00;"></div>
+                    	<div class="skill-bar-percent">50%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="90%">
+                    	<div class="skillbar-title" style="background: #27ae60;"><span>WampServer</span></div>
+                    	<div id="wamp"class="skillbar-bar" style="background: #2ecc71;"></div>
+                    	<div class="skill-bar-percent">90%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                    	<div class="skillbar-title" style="background: #124e8c;"><span>WinDesign</span></div>
+                    	<div id="windesign"class="skillbar-bar" style="background: #4288d0;"></div>
+                    	<div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+
+
+      </div>
+        </section>
+
+
+
+                                                      <!--footer-->
+    <footer class="container-fluid footer">
+      <div class="container">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+          <a id ="contact"  class="navbar-brand" href="#contact"> Formulaire de Contact </a>
+      </div>
+  </nav>
+
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <div class="card">
+                  <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contactez moi !
+                  </div>
+                  <div class="card-body">
+                      <form id="contact" method="post" action="traitement_formulaire.php">
+
+                          <div class="form-group">
+                            <label for="nom"> Nom </label>
+                              <input type="text" class="form-control" id="nom" name="nom" aria-describedby="emailHelp" placeholder="Entrez votre nom" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="email"> Adresse Mail </label>
+                              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Entrez votre Email" required>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                          </div>
+                          <div class="form-group">
+                            <label for="objet" > Objet </label>
+                              <input type="text" class="form-control" id="objet" name="objet" aria-describedby="emailHelp" placeholder="Entrez votre objet" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="message"> Message </label>
+                              <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                          </div>
+                          <div class="mx-auto">
+                          <button type="submit" class="btn btn-primary text-right" name="envoi" value="Envoyer le formulaire !"> Envoyer </button></div>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-4">
+              <div class="card bg-light mb-3">
+                  <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Adresse </div>
+                  <div class="card-body">
+
+                      <p> Nantes </p>
+                      <p> FRANCE </p>
+                      <p>Email : alexiscaille97@gmail.com </p>
+                  </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-light">
+      <div class="container">
+
+        <div id=social class="col-12 copyright mt-3">
+            <p class="text-left text-muted">
+          <a id="lienmail" href="mailto:alexiscaille97@gmail.com"><img src="img/logo_gmail.png" alt="gmail" width="60" height="60"/> </a>
+          <a id="liengoogle" href="https://plus.google.com/" target="_blank"><img src="img/logo_google.png" alt="google+" width="60" height="60"/></a>
+            <a id="lienLinkedin" href="https://www.linkedin.com/in/alexis-caillé-71b0b916b" target="_blank"><img src="img/logo_linkedin.png" alt="linkedin" width="60" height="60"/></a>
+            </p>
+        </div>
+
+              <div class="col-12 copyright mt-3">
+                <style type="text/css">
+                p {
+                  margin-bottom: 50px;
+                }
+                </style>
+                  <p class="text-right text-muted">
+                    Site entièrement réalisé en <img src="img/logo_code.png" width="80" height="50"/> par Alexis Caillé </p>
+              </div>
+
+          </div>
+      </div>
+  </footer>
+
+
+  </body>
+</html>
