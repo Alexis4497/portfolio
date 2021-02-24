@@ -95,6 +95,8 @@ margin-right: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }}
+.sidenav a {font-size: 18px; margin-left: 20px;}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -605,3 +607,38 @@ width: auto;
 	opacity: .5;
 }
 /*********************ResponsiveDesign********************/
+@media screen and (max-width: 1180px){
+
+#type_writer{
+visibility:hidden ;
+}
+
+#btn_contact{
+  visibility:hidden ;
+}
+.ban{
+  visibility:hidden ;
+}
+.about{
+margin-top: -150px;
+}
+
+#content{
+  margin-left: 25%;
+  margin-right: 5%;
+
+}
+}
+@media screen and (max-width: 500px){
+  #content{
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  }
+
+  @media screen and (max-width: 340px){
+    #content{
+      margin-left: 10%;
+      margin-right: 5%;
+    }
+    }
