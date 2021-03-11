@@ -8,6 +8,22 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+<!--CAPTCHA GOOGLE-->
+<script src="https://www.google.com/recaptcha/api.js?render=6LcyTGYaAAAAAHWhx-XODVB9wElXlHploS1VYjR8">
+ </script>
+ <script>
+ grecaptcha.ready(function () {
+ grecaptcha.execute('6LcyTGYaAAAAAHWhx-XODVB9wElXlHploS1VYjR8', { action: 'label' }).then(function (token) {
+ var recaptchaResponse = document.getElementById('recaptchaResponse');
+ recaptchaResponse.value = token;
+            });
+        });
+</script>
+
+
+
+
+
     <meta name="viewport" content="width=device-width"/>
 <!--Menu-->
 <script src ="js/menu_responsive.js"></script>
@@ -543,54 +559,30 @@ Le site contient également un calendrier où sont ajouter tous les événements
       </div>
   </nav>
 
-  <div class="container">
-      <div class="row">
-          <div class="col">
-              <div class="card">
-                  <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contactez moi !
-                  </div>
-                  <div class="card-body">
-                      <form id="contact" method="post" action="traitement_formulaire.php">
-
-                          <div class="form-group">
-                            <label for="nom"> Nom </label>
-                              <input type="text" class="form-control" id="nom" name="nom" aria-describedby="emailHelp" placeholder="Entrez votre nom" required>
-                          </div>
-                          <div class="form-group">
-                              <label for="email"> Adresse Mail </label>
-                              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Entrez votre Email" required>
-                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                          </div>
-                          <div class="form-group">
-                            <label for="objet" > Objet </label>
-                              <input type="text" class="form-control" id="objet" name="objet" aria-describedby="emailHelp" placeholder="Entrez votre objet" required>
-                          </div>
-                          <div class="form-group">
-                              <label for="message"> Message </label>
-                              <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
-                          </div>
-                          <div class="mx-auto">
-                          <button type="submit" class="btn btn-primary text-right" name="envoi" value="Envoyer le formulaire !"> Envoyer </button></div>
-
-                      </form>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-12 col-sm-4">
-              <div class="card bg-light mb-3">
-                  <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Adresse </div>
-                  <div class="card-body">
-
-                      <p> Nantes </p>
-                      <p> FRANCE </p>
-                      <p>Email : alexiscaille97@gmail.com </p>
-                  </div>
-            </div>
-          </div>
+  <div class="form-container">
+    <form id="reused_form">
+      <div>
+        <input id="name" type="text" name="name" placeholder="Nom" required class="validate">
       </div>
-  </div>
+      <div>
+        <input id="email" type="email" name="email" placeholder="E-mail" required class="validate">
+      </div>
+      <div>
+        <textarea id="message" name="message" placeholder="Ici votre message..." class="validate" ></textarea>
+      </div>
+      <div>
+        <button class="form-button" type="submit">Envoyer</button>
+      </div>
+      <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+    </form>
 
+    <div id="error_message" style="width:100%; height:100%; display:none; ">
+      <h4>Une erreur s'est produite, veuillez rééssayer</h4> 
+    </div>
+    <div id="success_message" style="width:100%; height:100%; display:none; ">
+      <h4>Message envoyé !</h4>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="text-light">
       <div class="container">

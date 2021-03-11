@@ -24,13 +24,11 @@ padding: 0;
 }
 
 .separator{
-height: 3px;
-width: 5%;
-border:none;
+width: 120px;
 text-align: center;
-box-shadow: none;
-background-color: #3498DB;
-
+margin-left: 45%;
+color: #3498DB;
+opacity: 0.9;
 }
 
 /*header*/
@@ -499,57 +497,86 @@ width:110px;
 
 
 /******************************************************contact****************************************************************/
-#contact .navbar-brand{
-  margin-bottom: -84px;
+.form-container {
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  
 }
-.bloc_left_price {
-    color: #c01508;
-    text-align: center;
-    font-weight: bold;
-    font-size: 150%;
+#reused_form {
+  position: relative;
+  margin: 50px auto;
 }
-.category_block li:hover {
-    background-color: #007bff;
+input {
+  font-size: 0.85em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom:none;
 }
-.category_block li:hover a {
-    color: #ffffff;
+textarea {
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  resize: none !important;
 }
-.category_block li a {
-    color: #343a40;
+input::placeholder, textarea::placeholder, input:focus::placeholder, textarea:focus::placeholder {
+  color: #aca49c;
 }
-.add_to_cart_block .price {
-    color: #c01508;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-    margin-bottom: 0;
+input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #e2dedb;
 }
-.add_to_cart_block .price_discounted {
-    color: #343a40;
-    text-align: center;
-    text-decoration: line-through;
-    font-size: 140%;
+.form-button {
+  background: transparent;
+  border: solid 1px #b3aca7;
+  padding: 20px 75px;
+  margin: 14px 0 -20px 0;
 }
-.product_rassurance {
-    padding: 10px;
-    margin-top: 15px;
-    background: #ffffff;
-    border: 1px solid #6c757d;
-    color: #6c757d;
+.form-container h4 {
+  font-size: 2em;
 }
-.product_rassurance .list-inline {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-align: center;
+#error_message {
+  color: red;
+  border: 1px solid red;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px 15px 8px 15px;
+  box-shadow: 0 0 5px red;
 }
-.product_rassurance .list-inline li:hover {
-    color: #343a40;
+#success_message {
+  color: green;
+  border: 1px solid green;
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 50px;
+  box-shadow: 0 0 5px green;
 }
-.reviews_product .fa-star {
-    color: gold;
+.arrow {
+  margin: -20 auto;
+  padding-top: 15px;
+  animation: arrow linear 1.5s;
+  animation-iteration-count: infinite;
 }
-.pagination {
-    margin-top: 20px;
+@keyframes arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  38% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 footer {
   margin-top: 5%;
@@ -634,6 +661,39 @@ margin-top: -150px;
     margin-left: 15%;
     margin-right: 5%;
   }
+  .form-container {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;  
+    margin-right: 0; 
+  }
+  input {
+    font-size: 0.85em;
+    width: 280px;
+    height: 50px;
+    padding: 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    border-bottom:none;
+  }
+
+textarea {
+  width: 280px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  resize: none !important;
+}
+.separator{
+margin-left: 30%;
+
+}
   }
 
   @media screen and (max-width: 340px){
